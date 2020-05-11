@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForOf</title>
+    <style>
+        article p{
+            font-family: monospace;
+            font-size: 15pt;
+            margin: 2px;
+            padding: 5px;
+            font-weight: bold;
+            background-color: yellow;
+        }
+
+        .read{
+            font-weight: normal;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium iusto placeat explicabo cum fugiat libero, labore voluptates sint nam non provident et voluptatibus pariatur in. Blanditiis quo labore quod! Praesentium.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, porro nihil repudiandae iure placeat nisi iusto delectus. Culpa deleniti consequuntur, veniam dolorum rem quia, similique odio necessitatibus debitis perferendis magnam?
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, fuga inventore doloribus fugiat, exercitationem voluptatibus reprehenderit magnam nam quis amet, pariatur eius harum explicabo accusantium at officiis hic aut soluta!
+        </p>
+    </article>
+
+    <button onclick="marcar()">Marcar todos como lido</button>
+    <button onclick="marcar(false)">Marcar todos como não lido</button>
+
+    <script>
+        const marcar = (lido = true) => {
+            const paragrafos = document.querySelectorAll('article p')
+            for (paragrafo of paragrafos) {
+                (lido) ?
+                paragrafo.classList.add('read'):
+                paragrafo.classList.remove('read')
+            }
+        }
+    </script>
+</body>
+</html>
