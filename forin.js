@@ -18,5 +18,4 @@ const familia=[
 ]
 for (let pessoa in familia) {
     console.log (familia[pessoa]);
-    
 }

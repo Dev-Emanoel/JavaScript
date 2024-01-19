@@ -4,7 +4,7 @@
      name: 'Emanoel',
      education: 'IT Developer'
 }
-console.log(Object.keys(obj))
+console.log(Object.keys(obj));
 
 let objArr = [
     'apple',

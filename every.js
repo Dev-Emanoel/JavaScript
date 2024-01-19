@@ -1,14 +1,8 @@
-const idadefamilia = [{
-        nome: 'Priscila',
-        idade: 29
-    },
-    {   nome: 'Emanoel',
-        idade: 35
-    },
-    {
-        nome: 'Lívia',
-        idade: 10
-    },
+const idadefamilia = [
+    { nome: 'Priscila', idade: 31 },
+    { nome: 'Emanoel', idade: 38 },
+    { nome: 'Lívia', idade: 13 },
+    { nome: 'Lucas', idade: 3 },
 
 ]
 const ehAdulto = valor => valor.idade >= 18

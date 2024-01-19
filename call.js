@@ -7,10 +7,9 @@ let name = {
 }
 
 let printfullName = function(cidadeNatal){
-    console.log(this.firstName 
-        + " " + this.lastName 
-        + "," + " Cidade Natal: " 
-        + cidadeNatal)
+    console.log(`${this.firstName} ${this.lastName}, 
+        Cidade Natal:  
+        ${cidadeNatal}`)
 }
 
 let name2 = {
